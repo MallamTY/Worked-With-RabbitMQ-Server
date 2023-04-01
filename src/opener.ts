@@ -43,7 +43,7 @@ const customerFinder = () => {
             const guestLon: number = parseInt(columns[1]);
             const guestLat: number = parseInt(columns[2]);
             const returnedDistance: any = great_circle_distance(guestLat, FINTECHcoLat, guestLon, FINTECHCOLon);
-            if (returnedDistance > 100) {
+            if (returnedDistance <= 100) {
               customerid.push(columns[0]);
             }
           }
