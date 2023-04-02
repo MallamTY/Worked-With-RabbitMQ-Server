@@ -1,12 +1,12 @@
-### INVITATION DECIDER
+# INVITATION DECIDER
 
-## ABOUT THE APPLICATION
+### ABOUT THE APPLICATION
 
 This is a Typescript application which accepts a CSV file with the (customerId, lon, lat) as the header.
 THe application gets the record for each customer, and determine if the distance between a company located at the cordinate 52.493256, 13.446082 for longitude and latitude respectively is within 100KM. If the distance between a customer and the company is within 100KM, the customerId is save discarded if otherwise. In a case where any of the column is not specified, a warning is given by the application.
 Upon obtaining all customers qualified for invitation, a message queue is sent containing the ascending order of the qualified customerId to RabbitMQ (A message queuing server). A client is then set up to read the queue message from the RabbitMQ messaging serice server.
 
-## APPLICATION INSTALLATION PROCESS
+### APPLICATION INSTALLATION PROCESS
 
 To install this application, follow the following steps;
 
@@ -28,4 +28,3 @@ To install this application, follow the following steps;
 ### FOR ASSISTANCE USING THIS APPLICATION
 
 If you need clarification using this application, send an email to tnsosanya@gmail.com
-
