@@ -18,9 +18,9 @@ To install this application, follow the following steps;
 6.  Run "tsc --init" to initialize typescript application and also to create a tsconfig.json file
 7.  Run "npm install" to install all depedencies for the application.
 8.  Install RabbitMQ-Server for the message queuing service if you don't have it.
-9.  Create .env file in the rool folder and add the USERNAME, PASSWORD, HOST, and PORT to connect to your running RabbitMQ server.
+9.  Create .env file in the root folder and add the USERNAME, PASSWORD, HOST, and PORT to connect to your running RabbitMQ server.
 10. Run "tsc -w" to compile the Typescript application.
-11. Copy your CSV file to the "dist" folder or whatever name you specified as the outDir in your tsconfig.json file.
+11. Copy your CSV file with format (id: 645b9771-c991-4273-b3aa-11de0e22b600, lat: 53.69278697, long:13.76580937,) to the "dist" folder or whatever name you specified as the outDir in your tsconfig.json file.
 12. Navigate to the dist folder and run "node opener.js" to run the application and send customers qualified for invitation in your CSV file to the RabbitMQ server.
 13. Navigate to the dist folder and run "node display.client.js" to run the client part of the application and display the customerId of the qualified customers for
     invitation on console.
